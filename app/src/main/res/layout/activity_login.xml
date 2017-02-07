@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context="timberwolf.blackmarket.com.blackmarket.LoginActivity"
+    android:background="@color/windowBackground">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:background="@null"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/blackmarketlogotransparent"
+        android:scaleType="fitXY"
+        android:elevation="12dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="The official Mission Vista Black Market app (BETA) - show your school pride and win prizes!"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginDesc"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="NOTE: If you are not a Mission Vista student you will not be eligible to win any prizes :( Also, if you try to hack this, I'll know, and I'll ban you, kid D:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc2"
+        android:textColor="@android:color/white"
+        android:textAlignment="center" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:text="Other sign in methods coming in future updates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/textColor"
+        android:textAlignment="center"
+        android:id="@+id/loginDesc2"
+        android:textSize="10sp" />
+
+
+</LinearLayout>

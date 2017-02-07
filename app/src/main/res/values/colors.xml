@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="windowBackground">#303030</color>
+    <color name="cardColor">#E4E4E4</color>
+    <color name="gold">#F6CA18</color>
+    <color name="endGold">#F7E353</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="cardColor2">#424242</color>
+    <color name="greent">#108037</color>
+    <color name="redt">#AA0000</color>
+</resources>

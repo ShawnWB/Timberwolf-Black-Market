@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BlackMarket</string>
+    <string name="facebook_app_id">1996215567259924</string>
+    <string name="log_out">Log Out</string>
+</resources>

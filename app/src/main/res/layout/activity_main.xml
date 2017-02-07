@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="0dp"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:clipToPadding="false"
+tools:context="timberwolf.blackmarket.com.blackmarket.MainActivity"
+android:background="@color/windowBackground">
+
+    <android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scoreCard"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    card_view:cardCornerRadius="4dp"
+    android:elevation="22dp"
+    card_view:cardBackgroundColor="@color/gold">
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:gravity="left"
+        android:text="Score:"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif" />
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="30dp"
+        android:gravity="right"
+        android:text="0"
+        android:textSize="23sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif" />
+</android.support.v7.widget.CardView>
+
+    <Button
+        android:text="Store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreCard"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/store_button" />
+
+        <RelativeLayout
+            android:id="@+id/sl"
+            android:layout_width="350dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/store_button"
+            android:layout_marginTop="10dp"
+            android:elevation="0dp"
+            android:clickable="false"
+            android:translationX="0dp"
+            android:background="@color/cardColor2">
+
+            <ToggleButton
+                android:id="@+id/buytoggle"
+                android:layout_width="65dp"
+                android:layout_height="44dp"
+                android:checked="true"
+                android:textOn="Buy"
+                android:textOff="Sell"
+                android:translationX="0dp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:background="@color/greent"
+                android:layout_margin="4dp"
+                android:elevation="20dp"/>
+
+            <Button
+                android:text="Tapper"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:background="@drawable/button"
+                android:layout_below="@id/buytoggle"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buy1" />
+
+            <Button
+                android:text="Upgrade Tap"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:background="@drawable/button"
+                android:layout_below="@id/buy1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="4dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buy2" />
+
+            <TextView
+                android:id="@+id/buy1text"
+                android:text="TextView"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:gravity="right"
+                android:layout_toRightOf="@id/buy1"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/buytoggle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/cost1"
+                android:text="TextView"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:gravity="right"
+                android:layout_toRightOf="@id/buy1"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/buytoggle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/buy2text"
+                android:text="TextView"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:gravity="right"
+                android:layout_toRightOf="@id/buy2"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/buy1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/cost2"
+                android:text="TextView"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:gravity="right"
+                android:layout_toRightOf="@id/buy2"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/buy1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/sellText1"
+                android:text="TextView"
+                android:textSize="25sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_toRightOf="@id/buy1"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/buytoggle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <TextView
+                android:id="@+id/sellText2"
+                android:text="TextView"
+                android:textSize="25sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:layout_toRightOf="@id/buy2"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:layout_below="@id/buy1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <TextView
+                android:id="@+id/selldesc"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"
+                android:text="Each item is sold for ~80% of the price you bought it for."
+                android:layout_marginTop="2dp"
+                android:paddingRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/buytoggle"
+                />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:background="@null"
+            android:layout_width="240dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="100dp"
+            card_view:srcCompat="@drawable/banana"
+            android:id="@+id/bananaButton"
+            android:scaleType="fitXY"
+            android:elevation="12dp"
+            android:layout_below="@+id/scoreCard"
+            android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Instagram"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/instabutton"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="12dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ig" />
+
+    <TextView
+        android:text="Round 1 ends at 12:00 AM 2-3-17. Be the first prize winner in history!"
+        android:textSize="14sp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/store_button"
+        android:layout_toRightOf="@+id/store_button"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/p1" />
+
+    <TextView
+        android:text="Bug complaints or suggestions? DM me. Better prizes and a better app relies on you believing in the Black Market!"
+        android:textSize="12sp"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ig"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/p2" />
+
+    <TextView
+        android:text="name"
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/name" />
+
+</RelativeLayout>

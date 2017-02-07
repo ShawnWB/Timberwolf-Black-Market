@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:clipToPadding="false"
+    tools:context="timberwolf.blackmarket.com.blackmarket.NameActivity"
+    android:background="@color/windowBackground">
+
+    <Button
+        android:text="Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterName"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:layout_alignLeft="@+id/enterName"
+        android:layout_alignStart="@+id/enterName"
+        android:layout_marginTop="32dp"
+        android:id="@+id/continueb" />
+
+    <TextView
+        android:text="Using something close to your real name or Instagram name is suggested."
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/namedesc"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/enterName"
+        android:layout_alignStart="@+id/enterName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        android:textColor="@color/textColor"
+        android:ems="10"
+        android:id="@+id/enterName"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/namedesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "630274008322",
+    "firebase_url": "https://timberwolf-black-market-ff649.firebaseio.com",
+    "project_id": "timberwolf-black-market-ff649",
+    "storage_bucket": "timberwolf-black-market-ff649.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630274008322:android:76dc406cd1b2d515",
+        "android_client_info": {
+          "package_name": "timberwolf.blackmarket.com.blackmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630274008322-lml091cituk9o9qusguos0ff0ok1m47v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxweYtU7hj9eEIMQY48fSSciBodjQY1YQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630274008322-lml091cituk9o9qusguos0ff0ok1m47v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
